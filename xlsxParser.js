@@ -7,6 +7,7 @@ const file = reader.readFile('./Listino.xlsx');
 let data = [];
 let diameters = [];
 let stroke = []
+let category = '';
 
 module.exports = () => {
     const sheets = file.SheetNames;
@@ -17,11 +18,11 @@ module.exports = () => {
                 file.Sheets[file.SheetNames[i]]
             )
             temp.forEach((res) => {
+                category = file.SheetNames[i];
                 if(file.SheetNames[i] == 'ISO6432'){
                     if(res.__EMPTY == 'Diametro (ø)'){
                         diameters = Object.values(res);
                         let diameterList = Object.values(res);
-                        data.push({tipologia: file.SheetNames[i], diameters: diameters})
                     }
                     else{
                         console.log(res)
@@ -42,6 +43,7 @@ module.exports = () => {
                     }
                 }
             })
+        data.push({category: category, info: stroke})
         }
-    return(stroke)
+    return(data)
 }
