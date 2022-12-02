@@ -37,5 +37,5 @@ module.exports = () => {
     const exampleRaw = info.ISO6432.strokes['100'];
     const example = rawInfo.ISO6432[exampleRaw][exampleColumn];
     console.log(example)
-    return(info)
+    return({info, rawInfo})
 }   

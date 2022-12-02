@@ -1,0 +1,260 @@
+{
+    "categories": [
+        {
+            "name": "cilinders",
+            "categories": [
+                    {
+                        "name": "a norma",
+                        "categories": [
+                            {
+                                "key": "ISO6432", 
+                                "value": "MINICILINDRI ISO6432"
+                            },
+                            {
+                                "key": "ISO15552",
+                                "value": "ISO15552"
+                            },
+                            {
+                                "key": "ISO15552 a tiranti - tie rods",
+                                "value": "CILINDRI ISO15552 TIRANTATI"
+                            },
+                            {
+                                "key": "???",
+                                "value": "CILINDRI C1D ISO15552 NEW"
+                            },
+                            {
+                                "key": "ISO15552 Easy Line",
+                                "value": "CILINDRO ISO15552 EL"
+                            },
+                            {
+                                "key": "CNOMO",
+                                "value": "CILINDRO CNOMO"
+                            },
+                            {
+                                "key": "ISO21287",
+                                "value": "CILINDRI COMPATTI ISO21287"
+                            },
+                            {
+                                "key": "UNITOP",
+                                "value": "CILINDRI UNITOP"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "non a norma",
+                        "categories": [
+                            {
+                                "key": "CP04",
+                                "value": "CILINDRI TONDI CP04"
+                            },
+                            {
+                                "key": "CP95",
+                                "value": "CILINDRI TONDI CP95"
+                            },
+                            {
+                                "key": "SERIE E",
+                                "value": "CILINDRI TONDI SERIE E"
+                            },
+                            {
+                                "key": "TR",
+                                "value": "CILINDRI A STELI GEMELLATI"
+                            },
+                            {
+                                "key": "compatti_125-200 - compact cyl",
+                                "value": "CILINDRI COMPATTI"
+                            },
+                            {
+                                "key": "cartuccia - cartridge",
+                                "value": "CILINDRI A CARTUCCIA"
+                            },
+                            {
+                                "key": "pinze - grippers",
+                                "value": "pinze pneumatiche"
+                            },
+                            {
+                                "key": "compatti guidati-guide compact",
+                                "value": "CILINDRI COMPATTI GUIDATI"
+                            },
+                            {
+                                "key": "??",
+                                "value": "CILINDRI VACUUM"
+                            },
+                            {
+                                "key": "Corsa breve-short stroke",
+                                "value": "CILINDRI CORSA BREVE"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "inox",
+                        "categories": [
+                            {
+                                "key": "CP04",
+                                "value": "CILINDRI TONDI CP04"
+                            },
+                            {
+                                "key": "ISO6432_inox - stainless steel",
+                                "value": "MINICILINDRI ISO6432"
+                            },
+                            {
+                                "key": "CP95_inox - stainless steel",
+                                "value": "CILINDRI TONDI CP95"
+                            },
+                            {
+                                "key": "ISO15552_inox AISI316 - SS316",
+                                "value": "CILINDRI ISO15552 AISI316"
+                            },
+                            {
+                                "key": "ISO15552_inox AISI304 - SS304",
+                                "value": "CILINDRI ISO15552 AISI304"
+                            },
+                            {
+                                "key": "C6B_inox",
+                                "value": "CILINDRI PROFILO PULITO"
+                            },
+                            {
+                                "key": "ISO21287_inox - stainless steel",
+                                "value": "CILINDRI COMPATTI ISO21287"
+                            }
+                        ]
+                    }],
+            "image": "../img/cilinders.jpeg" 
+        },
+        {
+            "name": "accessories",
+            "categories": [
+                {
+                    "key": "accessori ISO6432-accessories",
+                    "value": "ACCESSORI ISO6432"
+                },
+                {
+                    "key": "unità di guida - guide units",
+                    "value": "UNITA' DI GUIDA BOCCASTELI"
+                },
+                {
+                    "key": "accessori cil tondi-round cyl. ",
+                    "value": "ACCESSORI CILINDRI TONDI"
+                },
+                {
+                    "key": "accessori Cnomo - accessories",
+                    "value": "ACCESSORI CNOMO"
+                },
+                {
+                    "key": "accessori ISO15552-accessories",
+                    "value": "ACCESSORI ISO15552"
+                },
+                {
+                    "key": "accessori stelo-rod accessories",
+                    "value": "ACCESSORI STELO"
+                },
+                {
+                    "key": "dadi - nuts",
+                    "value": "DADI E GHIERE"
+                },
+                {
+                    "key": "sensori - sensors",
+                    "value": "SENSORI"
+                }
+            ],
+            "image": "../img/accessories.jpeg"
+        },
+        {
+            "name" :"kits",
+            "categories": [
+                {
+                    "name" : "a norma",
+                    "categories": [
+                        {
+                            "key": "kit ISO6432",
+                            "value": "KIT MINICILINDRI ISO6432"
+                        },
+                        {
+                            "key": "kit ISO15552",
+                            "value": "KIT CILINDRI ISO15552"
+                        },
+                        {
+                            "key": "kit cnomo",
+                            "value": "KIT CILINDRI CNOMO"
+                        },
+                        {
+                            "key": "kit ISO21287",
+                            "value": "KIT CILINDRI ISO21287"
+                        },
+                        {
+                            "key": "kit UNITOP",
+                            "value": "KIT CILINDRI UNITOP"
+                        }
+                    ]
+                },
+                {
+                    "name": "non a norma",
+                    "categories": [
+                        {
+                            "key": "kit CP04",
+                            "value": "KIT CILINDRI CP04"
+                        },
+                        {
+                            "key": "kit CP95",
+                            "value": "KIT CILINDRI CP95"
+                        },
+                        {
+                            "key": "kit SERIE E",
+                            "value": "KIT CILINDRI SERIE E"
+                        }
+                    ]
+                },
+                {
+                    "name": "inox",
+                    "categories": [
+                        {
+                            "key": "kit ISO6432 inox-stainless stee",
+                            "value": "KIT MINICILINDRI ISO6432"
+                        },
+                        {
+                            "key": "kit CP04 inox-stainless steel",
+                            "value": "KIT CILINDRI TONDI CP04"
+                        },
+                        {
+                            "key": "kit CP95 inox-stainless steel",
+                            "value": "KIT CILINDRI CP95"
+                        },
+                        {
+                            "key": "kit 15552 316-stainless steel",
+                            "value": "KIT CILINDRI AISI316 ISO15552"
+                        },
+                        {
+                            "key": "kit 15552 304-stainless steel",
+                            "value": "KIT CILINDRI AISI304 ISO15552"
+                        },
+                        {
+                            "key": "kit 21287-stainless steel",
+                            "value": "KIT CILINDRI ISO21287"
+                        }
+                    ]
+                },
+                {
+                    "name": "guarnizioni",
+                    "categories": [
+                        {
+                            "key": "kit guarnizioni CNOMO-seal",
+                            "value": "KIT GUARNIZIONI CNOMO"
+                        },
+                        {
+                            "key": "kit guarnizioni 15552-seal kit",
+                            "value": "KIT GUARNIZIONI ISO15552"
+                        },
+                        {
+                            "key": "kit guarnizioni ISO21287 seal",
+                            "value": "KIT GUARNIZIONI ISO21287"
+                        },
+                        {
+                            "key": "kit UNITOP",
+                            "value": "KIT GUARNIZIONI UNITOP"
+                        }
+                    ]
+                }
+            ],
+            "image": "../img/kits.jpeg"
+            }
+    ]
+}
