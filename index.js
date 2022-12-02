@@ -17,33 +17,38 @@ app.get('/', (req, res)=> {
 })
 
 
-app.get('/configuration/:family?/:tipology?/:category?', (req, res) => {
+app.get('/configuration/:category?', (req, res) => {
     res.set('Access-Control-Allow-Origin','*');
-    const {family, tipology, category} = req.params;
-    let response;
-
-    if(family && tipology === undefined){
-        configuration.categories.map((category, i) => {
-            if(category.name  === family){
-                res.json(category.categories);
-            }
-        })
+    const request = req.params;
+    let arrayCategory;
+    let level = 'branch';
+    let tipology, tipologyName;
+    if(req.params.category){
+        arrayCategory = request.category.split("@");
     }
-    else if(family && tipology){
-        console.log(tipology);
-        configuration.categories.map((category, i) => {
-            if(category.name === family){
-                category.categories.map((cat, x) => {
-                    if(cat.name === tipology){
-                        res.json(cat.categories);
+    if(arrayCategory){
+        let response = configuration.categories;
+        arrayCategory.forEach((category, i) => {
+            response.map((cat, x) => {
+                if(cat.name){
+                    if(cat.name === arrayCategory[i]){
+                        response = cat.categories;
                     }
-                })
-            }
+                }
+                else{
+                    if(cat.value === arrayCategory[i]){
+                        level = 'leaf';
+                        tipology = cat.key;
+                        tipologyName = cat.value;
+                    }
+                }   
+            })
         })
+        res.json({level: level, tipology: tipology, tipologyName: tipologyName, response: response});
     }
-    else(
-        res.json(configuration.categories)
-    )   
+    else{
+        res.json({level: level, tipology: tipology, tipologyName: tipologyName, response: configuration.categories});
+    }
 })
 
 app.get('/tipology', (req, res) => {
