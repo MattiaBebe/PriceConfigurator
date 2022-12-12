@@ -22,32 +22,37 @@ app.get('/configuration/:category?', (req, res) => {
     const request = req.params;
     let arrayCategory;
     let level = 'branch';
-    let tipology, tipologyName;
+    let tipology, tipologyName, index, subcategory;
     if(req.params.category){
         arrayCategory = request.category.split("@");
     }
     if(arrayCategory){
         let response = configuration.categories;
+
         arrayCategory.forEach((category, i) => {
             response.map((cat, x) => {
-                if(cat.name){
-                    if(cat.name === arrayCategory[i]){
+                if(!cat.is_leaf){
+                    if(cat.name === category){
                         response = cat.categories;
                     }
                 }
                 else{
-                    if(cat.value === arrayCategory[i]){
+                    if(cat.name === category){
                         level = 'leaf';
-                        tipology = cat.key;
-                        tipologyName = cat.value;
+                        index = cat.index;
+                        subcategory = cat.name;
                     }
                 }   
+                if(cat.is_page && cat.name === category){
+                    tipology = cat.name;
+                    tipologyName = cat.value;
+                }
             })
         })
-        res.json({level: level, tipology: tipology, tipologyName: tipologyName, response: response});
+        res.json({level: level, tipology: tipology, subcategory: subcategory, index: index, tipologyName: tipologyName, response: response});
     }
     else{
-        res.json({level: level, tipology: tipology, tipologyName: tipologyName, response: configuration.categories});
+        res.json({level: level, tipology: tipology, subcategory: subcategory, index: index, tipologyName: tipologyName, response: configuration.categories});
     }
 })
 
@@ -57,26 +62,26 @@ app.get('/tipology', (req, res) => {
     res.json({response: 'ok', tipology: tipology});
 })
 
-app.get('/:tipology/strokes', (req, res) => {
+app.get('/:tipology/:tipologyIndex/strokes', (req, res) => {
     res.set('Access-Control-Allow-Origin','*');
-    const {tipology} = req.params;
-    const strokes = Object.keys(mapping.info[tipology].strokes);
+    const {tipology, tipologyIndex} = req.params;
+    const strokes = Object.keys(mapping.info[tipology][tipologyIndex].strokes);
     res.json({response: 'ok', tipology: tipology, strokes: strokes})
 })
 
-app.get('/:tipology/diameters', (req, res) => {
+app.get('/:tipology/:tipologyIndex/diameters', (req, res) => {
     res.set('Access-Control-Allow-Origin','*');
-    const {tipology} = req.params;
-    const diameters = Object.keys(mapping.info[tipology].diameters);
+    const {tipology, tipologyIndex} = req.params;
+    const diameters = Object.keys(mapping.info[tipology][tipologyIndex].diameters);
     res.json({response: 'ok', tipology: tipology, diameters: diameters})
 })
 
-app.get('/:tipology/:stroke/:diameter', (req, res) => {
+app.get('/:tipology/:stroke/:diameter/:tipologyIndex', (req, res) => {
     res.set('Access-Control-Allow-Origin','*');
-    const {tipology, stroke, diameter} = req.params;
+    const {tipology, stroke, diameter, tipologyIndex} = req.params;
     const rawInfo = mapping.rawInfo;
-    const column = mapping.info[tipology].diameters[diameter];
-    const raw = mapping.info[tipology].strokes[stroke];
+    const column = mapping.info[tipology][tipologyIndex].diameters[diameter];
+    const raw = mapping.info[tipology][tipologyIndex].strokes[stroke];
     const cost = mapping.rawInfo[tipology][raw][column];
     res.json({cost: cost})
 })

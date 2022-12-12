@@ -7,12 +7,38 @@
                         "name": "a norma",
                         "categories": [
                             {
-                                "key": "ISO6432", 
-                                "value": "MINICILINDRI ISO6432"
+                                "name": "ISO6432",
+                                "value": "MINICILINDRI ISO6432",
+                                "is_page": true,
+                                "categories": [
+                                    {
+                                        "name": "Cilindri doppio effetto magnetico",
+                                        "index": 0,
+                                        "is_leaf": true
+                                    },
+                                    {
+                                        "name": "Cilindri doppio effetto magnetico ammortizzato",
+                                        "index": 1,
+                                        "is_leaf": true
+                                    },
+                                    {
+                                        "name": "Cilindri semplice effetto magnetico",
+                                        "index": 2,
+                                        "is_leaf": true
+                                    }
+                                ]
                             },
                             {
-                                "key": "ISO15552",
-                                "value": "ISO15552"
+                                "name": "ISO15552",
+                                "value": "ISO15552",
+                                "is_page": true,
+                                "categories": [
+                                    {
+                                        "name": "Cilindri doppio effetto magnetico ammortizzato",
+                                        "index": 0,
+                                        "is_leaf": true
+                                    }
+                                ]
                             },
                             {
                                 "key": "ISO15552 a tiranti - tie rods",
