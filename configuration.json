@@ -14,7 +14,33 @@
                                     {
                                         "name": "Cilindri doppio effetto magnetico",
                                         "index": 0,
-                                        "is_leaf": true
+                                        "is_leaf": true,
+                                        "charatteristics": [
+                                            {
+                                                "key": "PASSANTE - THROUGH ROD",
+                                                "value": "PASSANTE",
+                                                "type": "bool",
+                                                "default": false
+                                            },
+                                            {
+                                                "key": "STELO AISI316 - SS316 ROD",
+                                                "value": "STELO AISI316",
+                                                "type": "bool",
+                                                "default": false
+                                            },
+                                            {
+                                                "key": "STELO PROLUNGATO - ROD EXTENSION (mm)",
+                                                "value": "PROLUNGAMENTO STELO",
+                                                "type": "int",
+                                                "default": 0
+                                            },
+                                            {
+                                                "key": "FILETTO STELO SPECIALE - SPECIAL THREAD ROD",
+                                                "value": "FILETTO STELO",
+                                                "type": "int",
+                                                "default": 0
+                                            }
+                                        ]
                                     },
                                     {
                                         "name": "Cilindri doppio effetto magnetico ammortizzato",
@@ -41,27 +67,27 @@
                                 ]
                             },
                             {
-                                "key": "ISO15552 a tiranti - tie rods",
+                                "name": "ISO15552 a tiranti - tie rods",
                                 "value": "CILINDRI ISO15552 TIRANTATI"
                             },
                             {
-                                "key": "???",
+                                "name": "???",
                                 "value": "CILINDRI C1D ISO15552 NEW"
                             },
                             {
-                                "key": "ISO15552 Easy Line",
+                                "name": "ISO15552 Easy Line",
                                 "value": "CILINDRO ISO15552 EL"
                             },
                             {
-                                "key": "CNOMO",
+                                "name": "CNOMO",
                                 "value": "CILINDRO CNOMO"
                             },
                             {
-                                "key": "ISO21287",
+                                "name": "ISO21287",
                                 "value": "CILINDRI COMPATTI ISO21287"
                             },
                             {
-                                "key": "UNITOP",
+                                "name": "UNITOP",
                                 "value": "CILINDRI UNITOP"
                             }
                         ]
@@ -70,43 +96,43 @@
                         "name": "non a norma",
                         "categories": [
                             {
-                                "key": "CP04",
+                                "name": "CP04",
                                 "value": "CILINDRI TONDI CP04"
                             },
                             {
-                                "key": "CP95",
+                                "name": "CP95",
                                 "value": "CILINDRI TONDI CP95"
                             },
                             {
-                                "key": "SERIE E",
+                                "name": "SERIE E",
                                 "value": "CILINDRI TONDI SERIE E"
                             },
                             {
-                                "key": "TR",
+                                "name": "TR",
                                 "value": "CILINDRI A STELI GEMELLATI"
                             },
                             {
-                                "key": "compatti_125-200 - compact cyl",
+                                "name": "compatti_125-200 - compact cyl",
                                 "value": "CILINDRI COMPATTI"
                             },
                             {
-                                "key": "cartuccia - cartridge",
+                                "name": "cartuccia - cartridge",
                                 "value": "CILINDRI A CARTUCCIA"
                             },
                             {
-                                "key": "pinze - grippers",
+                                "name": "pinze - grippers",
                                 "value": "pinze pneumatiche"
                             },
                             {
-                                "key": "compatti guidati-guide compact",
+                                "name": "compatti guidati-guide compact",
                                 "value": "CILINDRI COMPATTI GUIDATI"
                             },
                             {
-                                "key": "??",
+                                "name": "??",
                                 "value": "CILINDRI VACUUM"
                             },
                             {
-                                "key": "Corsa breve-short stroke",
+                                "name": "Corsa breve-short stroke",
                                 "value": "CILINDRI CORSA BREVE"
                             }
                         ]
@@ -115,31 +141,31 @@
                         "name": "inox",
                         "categories": [
                             {
-                                "key": "CP04",
+                                "name": "CP04",
                                 "value": "CILINDRI TONDI CP04"
                             },
                             {
-                                "key": "ISO6432_inox - stainless steel",
+                                "name": "ISO6432_inox - stainless steel",
                                 "value": "MINICILINDRI ISO6432"
                             },
                             {
-                                "key": "CP95_inox - stainless steel",
+                                "name": "CP95_inox - stainless steel",
                                 "value": "CILINDRI TONDI CP95"
                             },
                             {
-                                "key": "ISO15552_inox AISI316 - SS316",
+                                "name": "ISO15552_inox AISI316 - SS316",
                                 "value": "CILINDRI ISO15552 AISI316"
                             },
                             {
-                                "key": "ISO15552_inox AISI304 - SS304",
+                                "name": "ISO15552_inox AISI304 - SS304",
                                 "value": "CILINDRI ISO15552 AISI304"
                             },
                             {
-                                "key": "C6B_inox",
+                                "name": "C6B_inox",
                                 "value": "CILINDRI PROFILO PULITO"
                             },
                             {
-                                "key": "ISO21287_inox - stainless steel",
+                                "name": "ISO21287_inox - stainless steel",
                                 "value": "CILINDRI COMPATTI ISO21287"
                             }
                         ]
@@ -150,35 +176,35 @@
             "name": "accessories",
             "categories": [
                 {
-                    "key": "accessori ISO6432-accessories",
+                    "name": "accessori ISO6432-accessories",
                     "value": "ACCESSORI ISO6432"
                 },
                 {
-                    "key": "unità di guida - guide units",
+                    "name": "unità di guida - guide units",
                     "value": "UNITA' DI GUIDA BOCCASTELI"
                 },
                 {
-                    "key": "accessori cil tondi-round cyl. ",
+                    "name": "accessori cil tondi-round cyl. ",
                     "value": "ACCESSORI CILINDRI TONDI"
                 },
                 {
-                    "key": "accessori Cnomo - accessories",
+                    "name": "accessori Cnomo - accessories",
                     "value": "ACCESSORI CNOMO"
                 },
                 {
-                    "key": "accessori ISO15552-accessories",
+                    "name": "accessori ISO15552-accessories",
                     "value": "ACCESSORI ISO15552"
                 },
                 {
-                    "key": "accessori stelo-rod accessories",
+                    "name": "accessori stelo-rod accessories",
                     "value": "ACCESSORI STELO"
                 },
                 {
-                    "key": "dadi - nuts",
+                    "name": "dadi - nuts",
                     "value": "DADI E GHIERE"
                 },
                 {
-                    "key": "sensori - sensors",
+                    "name": "sensori - sensors",
                     "value": "SENSORI"
                 }
             ],
@@ -191,23 +217,23 @@
                     "name" : "a norma",
                     "categories": [
                         {
-                            "key": "kit ISO6432",
+                            "name": "kit ISO6432",
                             "value": "KIT MINICILINDRI ISO6432"
                         },
                         {
-                            "key": "kit ISO15552",
+                            "name": "kit ISO15552",
                             "value": "KIT CILINDRI ISO15552"
                         },
                         {
-                            "key": "kit cnomo",
+                            "name": "kit cnomo",
                             "value": "KIT CILINDRI CNOMO"
                         },
                         {
-                            "key": "kit ISO21287",
+                            "name": "kit ISO21287",
                             "value": "KIT CILINDRI ISO21287"
                         },
                         {
-                            "key": "kit UNITOP",
+                            "name": "kit UNITOP",
                             "value": "KIT CILINDRI UNITOP"
                         }
                     ]
@@ -216,15 +242,15 @@
                     "name": "non a norma",
                     "categories": [
                         {
-                            "key": "kit CP04",
+                            "name": "kit CP04",
                             "value": "KIT CILINDRI CP04"
                         },
                         {
-                            "key": "kit CP95",
+                            "name": "kit CP95",
                             "value": "KIT CILINDRI CP95"
                         },
                         {
-                            "key": "kit SERIE E",
+                            "name": "kit SERIE E",
                             "value": "KIT CILINDRI SERIE E"
                         }
                     ]
@@ -233,27 +259,27 @@
                     "name": "inox",
                     "categories": [
                         {
-                            "key": "kit ISO6432 inox-stainless stee",
+                            "name": "kit ISO6432 inox-stainless stee",
                             "value": "KIT MINICILINDRI ISO6432"
                         },
                         {
-                            "key": "kit CP04 inox-stainless steel",
+                            "name": "kit CP04 inox-stainless steel",
                             "value": "KIT CILINDRI TONDI CP04"
                         },
                         {
-                            "key": "kit CP95 inox-stainless steel",
+                            "name": "kit CP95 inox-stainless steel",
                             "value": "KIT CILINDRI CP95"
                         },
                         {
-                            "key": "kit 15552 316-stainless steel",
+                            "name": "kit 15552 316-stainless steel",
                             "value": "KIT CILINDRI AISI316 ISO15552"
                         },
                         {
-                            "key": "kit 15552 304-stainless steel",
+                            "name": "kit 15552 304-stainless steel",
                             "value": "KIT CILINDRI AISI304 ISO15552"
                         },
                         {
-                            "key": "kit 21287-stainless steel",
+                            "name": "kit 21287-stainless steel",
                             "value": "KIT CILINDRI ISO21287"
                         }
                     ]
@@ -262,19 +288,19 @@
                     "name": "guarnizioni",
                     "categories": [
                         {
-                            "key": "kit guarnizioni CNOMO-seal",
+                            "name": "kit guarnizioni CNOMO-seal",
                             "value": "KIT GUARNIZIONI CNOMO"
                         },
                         {
-                            "key": "kit guarnizioni 15552-seal kit",
+                            "name": "kit guarnizioni 15552-seal kit",
                             "value": "KIT GUARNIZIONI ISO15552"
                         },
                         {
-                            "key": "kit guarnizioni ISO21287 seal",
+                            "name": "kit guarnizioni ISO21287 seal",
                             "value": "KIT GUARNIZIONI ISO21287"
                         },
                         {
-                            "key": "kit UNITOP",
+                            "name": "kit UNITOP",
                             "value": "KIT GUARNIZIONI UNITOP"
                         }
                     ]
