@@ -31,7 +31,7 @@
                                             {
                                                 "key": "STELO PROLUNGATO - ROD EXTENSION (mm)",
                                                 "value": "PROLUNGAMENTO STELO",
-                                                "type": "int",
+                                                "type": "special-int",
                                                 "default": 0
                                             },
                                             {
@@ -39,6 +39,12 @@
                                                 "value": "FILETTO STELO",
                                                 "type": "int",
                                                 "default": 0
+                                            },
+                                            {
+                                                "key": "ATEX",
+                                                "value": "VERSIONE ATEX",
+                                                "type": "bool",
+                                                "default": false
                                             }
                                         ]
                                     },

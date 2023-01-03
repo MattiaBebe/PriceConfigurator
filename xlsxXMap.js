@@ -30,7 +30,9 @@ const isDiameterCell = (data) => {
 const carateristics = [
     'PASSANTE - THROUGH ROD',
     'STELO AISI316 - SS316 ROD',
-    'STELO PROLUNGATO - ROD EXTENSION (mm)'
+    'STELO PROLUNGATO - ROD EXTENSION (mm)',
+    'FILETTO STELO SPECIALE - SPECIAL THREAD ROD',
+    'ATEX'
 ];
 
 const isThrough = (data) => {
@@ -63,10 +65,6 @@ module.exports = () => {
                 info[s][tipologyIndex].carateristics = {}
                 tipologyIndex++;
             }
-            // if(isThrough(row.__EMPTY)){
-            //     info[s][through] = {};
-            //     through++;
-            // }
         })
         tipologyIndex = 0;
         through = 0;
