@@ -45,6 +45,27 @@
                                                 "value": "VERSIONE ATEX",
                                                 "type": "bool",
                                                 "default": false
+                                            },
+                                            {
+                                                "key": "GRASSO",
+                                                "value": "GRASSO",
+                                                "type": "list",
+                                                "options": [
+                                                    "GRASSO BASSO ATTRITO - LOW FRICTION GREASE",
+                                                    "GRASSO ALIMENTARE - FOOD GREASE",
+                                                    "GRASSO SILICONICO - SILICONE GREASE"
+                                                ],
+                                                "default": false
+                                            },
+                                            {
+                                                "key": "ATTACCO",
+                                                "value": "TIPO DI ATTACCO",
+                                                "type": "list",
+                                                "options": [
+                                                    "ATTACCO RADIALE - RADIAL INLET",
+                                                    "ATTACCO ASSIALE - AXIAL INLET"
+                                                ],
+                                                "default": false
                                             }
                                         ]
                                     },
